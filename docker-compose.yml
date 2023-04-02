@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  develop:
+    image: ubuntu:20.04
+    container_name: epita 
+    ports:
+      - "2048:2048"
+    shm_size: 1GB
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: /usr/bin/bash
+    volumes:
+      - ${PWD}/volume:/root/epita/volume/
+    stdin_open: true
+    tty: true
