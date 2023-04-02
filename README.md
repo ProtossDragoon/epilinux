@@ -1,4 +1,6 @@
-# Enviroment for Y2 epita exchange students
+# Enviroment for EPITA Y2 PROG class
+
+This dockerfile might help you to prepare your environment for the Y2 PROG class.
 
 Open a terminal:
 
