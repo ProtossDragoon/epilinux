@@ -7,6 +7,7 @@ RUN ln -snf /usr/share/zoneinfo/Europe/Paris /etc/localtime && \
     echo Europe/Paris > /etc/timezone
  
 RUN apt-get update && apt-get install -y vim
+RUN echo "set ts=4 sw=4" > ~/.vimrc
 
 # Network debugging tool
 RUN apt-get update && apt-get install -y curl ncat
